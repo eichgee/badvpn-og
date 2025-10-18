@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5CEAA121-2508-3D6A-AD67-30A70AC9F91C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>Win32</Platform>
+    <ProjectName>badvpn-tun2socks</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\User\Documents\GitHub\badvpn\build\tun2socks\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">badvpn-tun2socks.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">badvpn-tun2socks</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\User\Documents\GitHub\badvpn\build\tun2socks\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">badvpn-tun2socks.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">badvpn-tun2socks</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\User\Documents\GitHub\badvpn\build\tun2socks\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">badvpn-tun2socks.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">badvpn-tun2socks</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\User\Documents\GitHub\badvpn\build\tun2socks\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">badvpn-tun2socks.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">badvpn-tun2socks</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\User\Documents\GitHub\badvpn;C:\Users\User\Documents\GitHub\badvpn\lwip\custom;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include\ipv4;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include\ipv6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4065;4018;4533;4244;4102;4098;4267;4116</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;BADVPN_BREACTOR_BADVPN;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;BADVPN_USE_WINAPI;_WIN32_WINNT=0x600;WIN32_LEAN_AND_MEAN;BADVPN_THREAD_SAFE=0;BADVPN_LITTLE_ENDIAN;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;BADVPN_BREACTOR_BADVPN;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;BADVPN_USE_WINAPI;_WIN32_WINNT=0x600;WIN32_LEAN_AND_MEAN;BADVPN_THREAD_SAFE=0;BADVPN_LITTLE_ENDIAN;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\User\Documents\GitHub\badvpn;C:\Users\User\Documents\GitHub\badvpn\lwip\custom;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include\ipv4;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include\ipv6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\User\Documents\GitHub\badvpn;C:\Users\User\Documents\GitHub\badvpn\lwip\custom;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include\ipv4;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include\ipv6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\system\Debug\badvpn-system.lib;..\flow\Debug\badvpn-flow.lib;..\tuntap\Debug\badvpn-tuntap.lib;..\lwip\Debug\badvpn-lwip.lib;..\socksclient\Debug\badvpn-socksclient.lib;..\udpgw_client\Debug\badvpn-udpgw_client.lib;..\socks_udp_client\Debug\badvpn-socks_udp_client.lib;..\socksclient\Debug\badvpn-socksclient.lib;..\flowextra\Debug\badvpn-flowextra.lib;..\system\Debug\badvpn-system.lib;ws2_32.lib;mswsock.lib;..\flow\Debug\badvpn-flow.lib;..\base\Debug\badvpn-base.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/User/Documents/GitHub/badvpn/build/tun2socks/Debug/badvpn-tun2socks.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/User/Documents/GitHub/badvpn/build/tun2socks/Debug/badvpn-tun2socks.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\User\Documents\GitHub\badvpn;C:\Users\User\Documents\GitHub\badvpn\lwip\custom;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include\ipv4;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include\ipv6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4065;4018;4533;4244;4102;4098;4267;4116</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BADVPN_BREACTOR_BADVPN;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;BADVPN_USE_WINAPI;_WIN32_WINNT=0x600;WIN32_LEAN_AND_MEAN;BADVPN_THREAD_SAFE=0;BADVPN_LITTLE_ENDIAN;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BADVPN_BREACTOR_BADVPN;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;BADVPN_USE_WINAPI;_WIN32_WINNT=0x600;WIN32_LEAN_AND_MEAN;BADVPN_THREAD_SAFE=0;BADVPN_LITTLE_ENDIAN;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\User\Documents\GitHub\badvpn;C:\Users\User\Documents\GitHub\badvpn\lwip\custom;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include\ipv4;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include\ipv6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\User\Documents\GitHub\badvpn;C:\Users\User\Documents\GitHub\badvpn\lwip\custom;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include\ipv4;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include\ipv6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\system\Release\badvpn-system.lib;..\flow\Release\badvpn-flow.lib;..\tuntap\Release\badvpn-tuntap.lib;..\lwip\Release\badvpn-lwip.lib;..\socksclient\Release\badvpn-socksclient.lib;..\udpgw_client\Release\badvpn-udpgw_client.lib;..\socks_udp_client\Release\badvpn-socks_udp_client.lib;..\socksclient\Release\badvpn-socksclient.lib;..\flowextra\Release\badvpn-flowextra.lib;..\system\Release\badvpn-system.lib;ws2_32.lib;mswsock.lib;..\flow\Release\badvpn-flow.lib;..\base\Release\badvpn-base.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/User/Documents/GitHub/badvpn/build/tun2socks/Release/badvpn-tun2socks.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/User/Documents/GitHub/badvpn/build/tun2socks/Release/badvpn-tun2socks.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\User\Documents\GitHub\badvpn;C:\Users\User\Documents\GitHub\badvpn\lwip\custom;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include\ipv4;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include\ipv6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4065;4018;4533;4244;4102;4098;4267;4116</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BADVPN_BREACTOR_BADVPN;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;BADVPN_USE_WINAPI;_WIN32_WINNT=0x600;WIN32_LEAN_AND_MEAN;BADVPN_THREAD_SAFE=0;BADVPN_LITTLE_ENDIAN;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BADVPN_BREACTOR_BADVPN;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;BADVPN_USE_WINAPI;_WIN32_WINNT=0x600;WIN32_LEAN_AND_MEAN;BADVPN_THREAD_SAFE=0;BADVPN_LITTLE_ENDIAN;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\User\Documents\GitHub\badvpn;C:\Users\User\Documents\GitHub\badvpn\lwip\custom;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include\ipv4;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include\ipv6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\User\Documents\GitHub\badvpn;C:\Users\User\Documents\GitHub\badvpn\lwip\custom;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include\ipv4;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include\ipv6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\system\MinSizeRel\badvpn-system.lib;..\flow\MinSizeRel\badvpn-flow.lib;..\tuntap\MinSizeRel\badvpn-tuntap.lib;..\lwip\MinSizeRel\badvpn-lwip.lib;..\socksclient\MinSizeRel\badvpn-socksclient.lib;..\udpgw_client\MinSizeRel\badvpn-udpgw_client.lib;..\socks_udp_client\MinSizeRel\badvpn-socks_udp_client.lib;..\socksclient\MinSizeRel\badvpn-socksclient.lib;..\flowextra\MinSizeRel\badvpn-flowextra.lib;..\system\MinSizeRel\badvpn-system.lib;ws2_32.lib;mswsock.lib;..\flow\MinSizeRel\badvpn-flow.lib;..\base\MinSizeRel\badvpn-base.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/User/Documents/GitHub/badvpn/build/tun2socks/MinSizeRel/badvpn-tun2socks.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/User/Documents/GitHub/badvpn/build/tun2socks/MinSizeRel/badvpn-tun2socks.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\User\Documents\GitHub\badvpn;C:\Users\User\Documents\GitHub\badvpn\lwip\custom;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include\ipv4;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include\ipv6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4065;4018;4533;4244;4102;4098;4267;4116</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BADVPN_BREACTOR_BADVPN;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;BADVPN_USE_WINAPI;_WIN32_WINNT=0x600;WIN32_LEAN_AND_MEAN;BADVPN_THREAD_SAFE=0;BADVPN_LITTLE_ENDIAN;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BADVPN_BREACTOR_BADVPN;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;BADVPN_USE_WINAPI;_WIN32_WINNT=0x600;WIN32_LEAN_AND_MEAN;BADVPN_THREAD_SAFE=0;BADVPN_LITTLE_ENDIAN;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\User\Documents\GitHub\badvpn;C:\Users\User\Documents\GitHub\badvpn\lwip\custom;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include\ipv4;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include\ipv6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\User\Documents\GitHub\badvpn;C:\Users\User\Documents\GitHub\badvpn\lwip\custom;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include\ipv4;C:\Users\User\Documents\GitHub\badvpn\lwip\src\include\ipv6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\system\RelWithDebInfo\badvpn-system.lib;..\flow\RelWithDebInfo\badvpn-flow.lib;..\tuntap\RelWithDebInfo\badvpn-tuntap.lib;..\lwip\RelWithDebInfo\badvpn-lwip.lib;..\socksclient\RelWithDebInfo\badvpn-socksclient.lib;..\udpgw_client\RelWithDebInfo\badvpn-udpgw_client.lib;..\socks_udp_client\RelWithDebInfo\badvpn-socks_udp_client.lib;..\socksclient\RelWithDebInfo\badvpn-socksclient.lib;..\flowextra\RelWithDebInfo\badvpn-flowextra.lib;..\system\RelWithDebInfo\badvpn-system.lib;ws2_32.lib;mswsock.lib;..\flow\RelWithDebInfo\badvpn-flow.lib;..\base\RelWithDebInfo\badvpn-base.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/User/Documents/GitHub/badvpn/build/tun2socks/RelWithDebInfo/badvpn-tun2socks.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/User/Documents/GitHub/badvpn/build/tun2socks/RelWithDebInfo/badvpn-tun2socks.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\User\Documents\GitHub\badvpn\tun2socks\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/User/Documents/GitHub/badvpn/tun2socks/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/User/Documents/GitHub/badvpn -BC:/Users/User/Documents/GitHub/badvpn/build --check-stamp-file C:/Users/User/Documents/GitHub/badvpn/build/tun2socks/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\User\Documents\GitHub\badvpn\build\tun2socks\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/User/Documents/GitHub/badvpn/tun2socks/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/User/Documents/GitHub/badvpn -BC:/Users/User/Documents/GitHub/badvpn/build --check-stamp-file C:/Users/User/Documents/GitHub/badvpn/build/tun2socks/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\User\Documents\GitHub\badvpn\build\tun2socks\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/User/Documents/GitHub/badvpn/tun2socks/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/User/Documents/GitHub/badvpn -BC:/Users/User/Documents/GitHub/badvpn/build --check-stamp-file C:/Users/User/Documents/GitHub/badvpn/build/tun2socks/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\User\Documents\GitHub\badvpn\build\tun2socks\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/User/Documents/GitHub/badvpn/tun2socks/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/User/Documents/GitHub/badvpn -BC:/Users/User/Documents/GitHub/badvpn/build --check-stamp-file C:/Users/User/Documents/GitHub/badvpn/build/tun2socks/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\User\Documents\GitHub\badvpn\build\tun2socks\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\User\Documents\GitHub\badvpn\tun2socks\tun2socks.c" />
+    <ClCompile Include="C:\Users\User\Documents\GitHub\badvpn\tun2socks\SocksUdpGwClient.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\User\Documents\GitHub\badvpn\build\ZERO_CHECK.vcxproj">
+      <Project>{382FA7DF-59BB-3B78-A605-6A4742C6C2B2}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\GitHub\badvpn\build\base\base.vcxproj">
+      <Project>{ECE8548C-E7F0-364A-B5F2-1DE9338EF5D8}</Project>
+      <Name>base</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\GitHub\badvpn\build\flow\flow.vcxproj">
+      <Project>{70F8C274-F579-3ACE-AC41-709E14E03624}</Project>
+      <Name>flow</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\GitHub\badvpn\build\flowextra\flowextra.vcxproj">
+      <Project>{3695DC70-A02B-3837-A6ED-F888A1D86A96}</Project>
+      <Name>flowextra</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\GitHub\badvpn\build\lwip\lwip.vcxproj">
+      <Project>{223C00ED-A4CF-3B8E-BE5C-618C96BF7B43}</Project>
+      <Name>lwip</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\GitHub\badvpn\build\socks_udp_client\socks_udp_client.vcxproj">
+      <Project>{54D94885-114B-3FCC-8543-121B14A0C4FD}</Project>
+      <Name>socks_udp_client</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\GitHub\badvpn\build\socksclient\socksclient.vcxproj">
+      <Project>{BFB5DFA0-FC46-38E1-8A06-2EE8E2B3A8F9}</Project>
+      <Name>socksclient</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\GitHub\badvpn\build\system\system.vcxproj">
+      <Project>{158E1480-AFD1-3AEF-A8F6-23AB729F62C4}</Project>
+      <Name>system</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\GitHub\badvpn\build\tuntap\tuntap.vcxproj">
+      <Project>{BFF693CC-081D-3E3C-B3D3-2FC1210C3E14}</Project>
+      <Name>tuntap</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Documents\GitHub\badvpn\build\udpgw_client\udpgw_client.vcxproj">
+      <Project>{6D053150-03AF-364E-BF31-A0FC4A45D096}</Project>
+      <Name>udpgw_client</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="badvpn-tun2socks.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

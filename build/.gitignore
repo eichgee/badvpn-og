@@ -1,0 +1,104 @@
+# --- Build Folders ---
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+ipch/
+out/
+build/
+x64/
+x86/
+ARM*/
+[Aa][Rr][Mm]64*/
+
+# --- Visual Studio ---
+.vs/
+*.vc.db
+*.VC.db
+*.opendb
+*.VC.opendb
+*.user
+*.suo
+*.ncb
+*.sdf
+*.cachefile
+*.VC.db-shm
+*.VC.db-wal
+
+# --- IntelliSense ---
+*.idb
+*.ipch
+*.iobj
+*.tlog
+*.pdb
+
+# --- Compiler/Linker Output ---
+*.obj
+*.exe
+*.dll
+*.lib
+*.exp
+*.ilk
+*.pch
+*.pdb
+*.manifest
+*.res
+*.rsp
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.log
+*.map
+
+# --- Temporary Files ---
+*.tmp
+*.log
+*.vspscc
+*.vssscc
+*.scc
+
+# --- CMake (if used) ---
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+CMakeUserPresets.json
+
+# --- Other Tools ---
+*.clangd/
+*.clang-tidy
+*.clang-format
+*.code-workspace
+
+# --- Backup / Misc ---
+*.bak
+*.orig
+*.old
+*.suo
+*.userosscache
+*.userprefs
+
+# --- Packages ---
+*.nuget/
+*.nupkg
+packages/
+*.vcxproj.user
+*.vcxproj.filters
+
+# --- Profiling / Analysis ---
+*.pgc
+*.pgd
+*.pgmp
+*.vsp
+*.vspx
+*.vsps
+*.psess
+*.sap
+
+# --- Crash Dumps / Memory Dumps ---
+*.dmp
+
+# --- Others (optional) ---
+# Uncomment below if you use specific IDEs or extensions
+# .idea/
+# .vscode/

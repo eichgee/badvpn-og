@@ -235,16 +235,25 @@ int BTap_Init2 (BTap *o, BReactor *reactor, struct BTap_init_data init_data, BTa
     }
     
     // locate device path
-    
+
+    int isGuid = startsWith(device_name, "{") && endsWith(device_name, "}");
+
     char device_path[TAPWIN32_MAX_REG_SIZE];
-    
-    BLog(BLOG_INFO, "Looking for TAP-Win32 with component ID %s, name %s", device_component_id, device_name);
-    
-    if (!tapwin32_find_device(device_component_id, device_name, &device_path)) {
-        BLog(BLOG_ERROR, "Could not find device");
-        goto fail1;
+    if (!isGuid)
+    {
+        BLog(BLOG_INFO, "Looking for TAP-Win32 with component ID %s, name %s", device_component_id, device_name);
+
+        if (!tapwin32_find_device(device_component_id, device_name, &device_path))
+        {
+            BLog(BLOG_ERROR, "Could not find device");
+            goto fail1;
+        }
     }
-    
+    else
+    {
+        snprintf(device_path, sizeof(device_path), "\\\\.\\Global\\%s.tap", device_name);
+    }
+
     // open device
     
     BLog(BLOG_INFO, "Opening device %s", device_path);
@@ -577,4 +586,24 @@ PacketRecvInterface * BTap_GetOutput (BTap *o)
     DebugObject_Access(&o->d_obj);
     
     return &o->output;
+}
+
+int startsWith(const char* str, const char* prefix) {
+	size_t lenStr = strlen(str);
+	size_t lenPre = strlen(prefix);
+
+	if (lenPre > lenStr)
+		return 0;
+
+	return strncmp(str, prefix, lenPre) == 0;
+}
+
+int endsWith(const char* str, const char* suffix) {
+	size_t lenStr = strlen(str);
+	size_t lenSuf = strlen(suffix);
+
+	if (lenSuf > lenStr)
+		return 0;
+
+	return strcmp(str + (lenStr - lenSuf), suffix) == 0;
 }

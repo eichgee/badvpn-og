@@ -174,44 +174,55 @@ int tapwin32_find_device (char *device_component_id, char *device_name, char (*d
         }
         
         RegCloseKey(unit_key);
-        
+
         // check if ComponentId matches
-        if (!strcmp(component_id, device_component_id)) {
-            // if no name was given, use the first device with the given ComponentId
-            if (!device_name) {
-                found = 1;
-                break;
-            }
-            
-            // open connection key
-            char conn_string[TAPWIN32_MAX_REG_SIZE];
-            pres = _snprintf(conn_string, sizeof(conn_string), "%s\\%s\\Connection", NETWORK_CONNECTIONS_KEY, net_cfg_instance_id);
-            if (pres < 0 || pres == sizeof(conn_string)) {
+        if (strlen(device_component_id) > 0)
+        {
+            if (strcmp(component_id, device_component_id))
+            {
                 continue;
-            }
-            HKEY conn_key;
-            if (RegOpenKeyEx(HKEY_LOCAL_MACHINE, conn_string, 0, KEY_READ, &conn_key) != ERROR_SUCCESS) {
-                continue;
-            }
-            
-            // read name
-            char name[TAPWIN32_MAX_REG_SIZE];
-            len = sizeof(name);
-            if (RegQueryValueEx(conn_key, "Name", NULL, &type, (LPBYTE)name, &len) != ERROR_SUCCESS || type != REG_SZ) {
-                ASSERT_FORCE(RegCloseKey(conn_key) == ERROR_SUCCESS)
-                continue;
-            }
-            
-            ASSERT_FORCE(RegCloseKey(conn_key) == ERROR_SUCCESS)
-            
-            // check name
-            if (!strcmp(name, device_name)) {
-                found = 1;
-                break;
             }
         }
+
+        // if no name was given, use the first device with the given ComponentId
+        if (!device_name)
+        {
+            found = 1;
+            break;
+        }
+
+        // open connection key
+        char conn_string[TAPWIN32_MAX_REG_SIZE];
+        pres = _snprintf(conn_string, sizeof(conn_string), "%s\\%s\\Connection", NETWORK_CONNECTIONS_KEY, net_cfg_instance_id);
+        if (pres < 0 || pres == sizeof(conn_string))
+        {
+            continue;
+        }
+        HKEY conn_key;
+        if (RegOpenKeyEx(HKEY_LOCAL_MACHINE, conn_string, 0, KEY_READ, &conn_key) != ERROR_SUCCESS)
+        {
+            continue;
+        }
+
+        // read name
+        char name[TAPWIN32_MAX_REG_SIZE];
+        len = sizeof(name);
+        if (RegQueryValueEx(conn_key, "Name", NULL, &type, (LPBYTE)name, &len) != ERROR_SUCCESS || type != REG_SZ)
+        {
+            ASSERT_FORCE(RegCloseKey(conn_key) == ERROR_SUCCESS)
+            continue;
+        }
+
+        ASSERT_FORCE(RegCloseKey(conn_key) == ERROR_SUCCESS)
+
+        // check name
+        if (!strcmp(name, device_name))
+        {
+            found = 1;
+            break;
+        }
     }
-    
+
     ASSERT_FORCE(RegCloseKey(adapter_key) == ERROR_SUCCESS)
     
     if (!found) {
